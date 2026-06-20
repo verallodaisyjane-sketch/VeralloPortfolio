@@ -1,0 +1,211 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0f0f0f;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* LANDING PAGE */
+
+.landing-page{
+    width:100%;
+    height:100vh;
+
+    background:
+    linear-gradient(
+    rgba(0,0,0,0.75),
+    rgba(0,0,0,0.85)
+    ),
+    url('images/Messenger_creation_98D735BE-FD8E-4FF8-96B8-6D03A75B4329.jpeg');
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.landing-content h1{
+    font-size:90px;
+    letter-spacing:6px;
+    margin-bottom:15px;
+    text-shadow:0 0 20px rgba(194, 9, 9, 0.5);
+}
+
+.landing-content p{
+    font-size:22px;
+    color:#d1d5db;
+    margin-bottom:30px;
+}
+
+/* EXPLORE BUTTON */
+
+.explore-btn{
+    display:inline-block;
+    text-decoration:none;
+
+    background:#520303;
+    color:white;
+
+    padding:20px 50px;
+
+    border-radius:50px;
+
+    font-size:20px;
+    font-weight:bold;
+
+    transition:0.3s;
+}
+
+.explore-btn:hover{
+    background:#991b1b;
+    transform:translateY(-5px);
+}
+
+/* SECTIONS */
+
+.content-section{
+    padding:80px 20px;
+}
+
+.card{
+    max-width:1000px;
+    margin:auto;
+
+    background:#1a1a1a;
+
+    padding:35px;
+
+    border-radius:15px;
+
+    box-shadow:0 0 25px rgba(220,38,38,0.15);
+}
+
+.card h1{
+    color:#dc2626;
+    text-align:center;
+    margin-bottom:25px;
+}
+
+/* PERSONAL IMAGE */
+
+.personal-image{
+    width:220px;
+    height:280px;
+
+    object-fit:cover;
+
+    border-radius:12px;
+
+    border:3px solid #dc2626;
+
+    display:block;
+    margin:0 auto 25px auto;
+}
+
+.card p{
+    margin-bottom:12px;
+    line-height:1.8;
+}
+
+/* ACHIEVEMENTS */
+
+.achievement-box{
+    background:#111;
+    padding:20px;
+    margin-top:25px;
+    border-radius:12px;
+}
+
+.achievement-box img{
+    width:100%;
+    max-height:600px;
+
+    object-fit:cover;
+
+    border-radius:10px;
+
+    margin-bottom:15px;
+}
+
+.achievement-box h3{
+    color:#dc2626;
+    margin-bottom:10px;
+}
+
+/* SOCIAL ICONS */
+
+.social-icons{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-top:20px;
+}
+
+.social-icons a{
+    color:white;
+    font-size:35px;
+    transition:0.3s;
+}
+
+.social-icons a:hover{
+    color:#dc2626;
+    transform:translateY(-5px);
+}
+
+/* FADE IN ANIMATION */
+
+.fade-in{
+    opacity:0;
+    transform:translateY(50px);
+    transition:all 1s ease;
+}
+
+.fade-in.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .landing-content h1{
+        font-size:50px;
+    }
+
+    .landing-content p{
+        font-size:18px;
+    }
+
+    .explore-btn{
+        padding:12px 30px;
+    }
+
+    .personal-image{
+        width:180px;
+        height:220px;
+    }
+
+    .content-section{
+        padding:50px 15px;
+    }
+
+    .social-icons a{
+        font-size:28px;
+    }
+
+}
